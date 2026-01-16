@@ -1,0 +1,33 @@
+CREATE TABLE IF NOT EXISTS public.source_table_test_1 (
+    source_id TEXT,
+    source_column5 TEXT,
+    source_column6 TEXT
+);
+
+CREATE TABLE IF NOT EXISTS public.source_table_test_2 (
+    source_id TEXT,
+    source_column7 TEXT,
+    source_column8 TEXT
+);
+
+CREATE TABLE IF NOT EXISTS public.target_table_test (
+    target_id TEXT,
+    target_column1 TEXT,
+    target_column2 TEXT,
+    target_column3 TEXT,
+    target_column4 TEXT
+);
+
+TRUNCATE TABLE public.source_table_test_1;
+TRUNCATE TABLE public.source_table_test_2;
+TRUNCATE TABLE public.target_table_test;
+
+INSERT INTO public.source_table_test_1 (source_id, source_column5, source_column6) VALUES
+('K1', 'S5_1', 'S6_1'),
+('K2', 'S5_2', 'S6_2'),
+('K3', 'S5_3', 'S6_3');
+
+INSERT INTO public.source_table_test_2 (source_id, source_column7, source_column8) VALUES
+('K1', 'S7_1', 'S8_1'),
+('K2', 'S7_2', 'S8_2'),
+('K4', 'S7_4', 'S8_4');
