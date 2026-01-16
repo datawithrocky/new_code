@@ -1,0 +1,42 @@
+{
+  "source_table_test_1": {
+    "type": "db",
+    "schema": "public",
+    "tablename": "target_table_test",
+    "relational": "True",
+    "mapping": [
+      {
+        "source_column": "source_column5",
+        "target_column": "target_column1",
+        "source_key": "source_id",
+        "target_key": "target_id"
+      },
+      {
+        "source_column": "source_column6",
+        "target_column": "target_column2",
+        "source_key": "source_id",
+        "target_key": "target_id"
+      }
+    ]
+  },
+  "source_table_test_2": {
+    "type": "db",
+    "schema": "public",
+    "tablename": "target_table_test",
+    "relational": "True",
+    "mapping": [
+      {
+        "source_column": "source_column7",
+        "target_column": "target_column3",
+        "source_key": "source_id",
+        "target_key": "target_id"
+      },
+      {
+        "source_column": "source_column8",
+        "target_column": "target_column4",
+        "source_key": "source_id",
+        "target_key": "target_id"
+      }
+    ]
+  }
+}
